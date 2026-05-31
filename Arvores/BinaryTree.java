@@ -122,13 +122,13 @@ public class BinaryTree{
     }
     public void printTree(TreeNode head) {
         if (head != null) {
-            // Visita a subárvore esquerda
+
             printTree(head.getEsquerda());
 
-            // Imprime o valor do nó atual
+
             System.out.print(head.getValor() + " ");
 
-            // Visita a subárvore direita
+
             printTree(head.getDireita());
         }
     }
